@@ -77,6 +77,8 @@ class AppContext {
 
     private(set) var deviceManager: DeviceManager
     private(set) var cloudKeyValueStore: CloudKeyValueStore
+    
+    private(set) var beltStreamManager: BeltNavigationStreamManager
 
     private(set) var isFirstLaunch = false
     
@@ -202,6 +204,8 @@ class AppContext {
         LocalizationContext.configureAccessibilityLanguage()
         
         cloudKeyValueStore = CloudKeyValueStore()
+        
+        beltStreamManager = BeltNavigationStreamManager()
     }
     
     // MARK: Actions

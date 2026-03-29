@@ -249,8 +249,40 @@ class DevicesViewController: UIViewController {
                             }
                         }
                     })
-                // Note, parroting the above assuming Bose can follow the same flow
-            } else if let device = connectedDevice as? BoseFramesMotionManager {
+            } else if let device = connectedDevice as? ESP32BeltDevice {
+                headphoneMotionStatusSubscriber = device.status
+                    .receive(on: RunLoop.main)
+                    .sink(receiveValue: { [weak self] (newValue) in
+                        guard let `self` = self else { return }
+                        guard let currentDevice = self.connectedDevice as? ESP32BeltDevice else { return }
+                        let oldViewState = self.state
+                        
+                        switch newValue {
+                        case .unknown: return
+                        case .disconnected:
+                            if currentDevice.isFirstConnection || currentDevice.status.value == .connecting {
+                                self.state = .paired
+                            } else {
+                                self.state = .disconnected
+                            }
+                        case .connecting:
+                            self.state = .pairingAudio
+                        case .ready:
+                            if currentDevice.isFirstConnection {
+                                AppContext.shared.deviceManager.add(device: currentDevice)
+                            }
+                            self.state = currentDevice.isFirstConnection ? .completedPairing : .connected
+                        }
+                        
+                        if oldViewState == self.state {
+                            DispatchQueue.main.async { [weak self] in
+                                self?.renderView()
+                            }
+                        }
+                    })
+            }
+            // Note, parroting the above assuming Bose can follow the same flow
+            else if let device = connectedDevice as? BoseFramesMotionManager {
                 GDLogHeadphoneMotionInfo("Bose: DeviceViewController connected Bose Frames")
                 headphoneMotionStatusSubscriber = device.status
                     .receive(on: RunLoop.main)
@@ -747,6 +779,11 @@ class DevicesViewController: UIViewController {
                 self?.selectedDeviceType = BoseFramesMotionManager.self
                 self?.state = .pairingAudio
             }))
+            
+            alert.addAction(UIAlertAction(title: GDLocalizationUnnecessary(ESP32BeltDevice.DEVICE_MODEL_NAME), style: .default, handler: { [weak self] (_) in
+                self?.selectedDeviceType = ESP32BeltDevice.self
+                self?.state = .pairingAudio
+            }))
 
             // In case the test sound was playing when we disconnected
             AppContext.process(HeadsetTestEvent(.end))
@@ -764,6 +801,8 @@ class DevicesViewController: UIViewController {
                 name = GDLocalizationUnnecessary("Apple AirPods")
             } else if type == BoseFramesMotionManager.self {
                 name = GDLocalizationUnnecessary(BoseFramesMotionManager.DEVICE_MODEL_NAME)
+            } else if type == ESP32BeltDevice.self {
+                name = GDLocalizationUnnecessary(ESP32BeltDevice.DEVICE_MODEL_NAME)
             } else {
                 name = GDLocalizationUnnecessary("AR Headphones")
             }
@@ -895,6 +934,10 @@ class DevicesViewController: UIViewController {
                         }
                     }
                     
+                } else if let device = device as? ESP32BeltDevice {
+                    GDLogAppInfo("Belt: setupDevice succeeded")
+                    self.connectedDevice = device
+                    self.state = .paired
                 } else {
                     // Note that we store the new device rather than adding it to the device manager immediately
                     // so that we can display the firstConnection screen before starting calibration. See `onPrimaryBtnTouchUpInside()`
@@ -965,6 +1008,8 @@ extension DevicesViewController: DeviceManagerDelegate {
         guard let calibratableDevice = device as? CalibratableDevice else {
             if let device = device as? HeadphoneMotionManagerWrapper, device.isFirstConnection {
                 state = .completedPairing
+            } else if let device = device as? ESP32BeltDevice {
+                state = device.isFirstConnection ? .completedPairing : .connected
             } else {
                 state = .connected
             }

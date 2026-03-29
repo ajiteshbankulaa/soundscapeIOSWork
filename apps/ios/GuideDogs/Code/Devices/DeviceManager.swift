@@ -238,6 +238,9 @@ extension DeviceManager {
             return HeadphoneMotionManagerWrapper(id: uuid, name: name)
         case .boseFramesRondo:
             return BoseFramesMotionManager(id: uuid, name: name)
+        case .esp32VibrationBelt:
+            // Will implement ESP32BeltDevice in a subsequent step
+            return ESP32BeltDevice(id: uuid, name: name)
         }
     }
 }

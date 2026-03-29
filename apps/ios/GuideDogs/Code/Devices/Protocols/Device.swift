@@ -30,6 +30,7 @@ typealias DeviceCompletionHandler = (Result<Device, DeviceError>) -> Void
 enum DeviceType: String, Codable, CaseIterable {
     case apple
     case boseFramesRondo
+    case esp32VibrationBelt
 }
 
 extension DeviceType {
@@ -46,6 +47,8 @@ extension DeviceType {
             return HeadphoneMotionManagerReachabilityWrapper()
         case .boseFramesRondo:
             return BoseFramesMotionManagerReachability()
+        case .esp32VibrationBelt:
+            return nil
         }
     }
     

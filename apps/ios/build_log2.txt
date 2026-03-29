@@ -1,0 +1,1161 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild build -project GuideDogs.xcodeproj -scheme Soundscape -destination "platform=iOS Simulator,name=iPhone 17"
+
+Resolve Package Graph
+
+
+Resolved source packages:
+  CoreGPX: https://github.com/vincentneo/CoreGPX.git @ 0.9.3
+  SDWebImageSwiftUI: https://github.com/SDWebImage/SDWebImageSwiftUI @ 2.2.7
+  NVActivityIndicatorView: https://github.com/ninjaprox/NVActivityIndicatorView @ 5.2.0
+  Reachability: https://github.com/ashleymills/Reachability.swift @ 5.2.4
+  DZNEmptyDataSet: https://github.com/dzenbot/DZNEmptyDataSet @ 9bffa69
+  SDWebImage: https://github.com/SDWebImage/SDWebImage @ 5.21.7
+  swift-log: https://github.com/apple/swift-log @ 1.10.1
+  Realm: https://github.com/realm/realm-cocoa @ 10.11.0
+  CocoaLumberjack: https://github.com/CocoaLumberjack/CocoaLumberjack @ 3.9.0
+  RealmDatabase: https://github.com/realm/realm-core @ 11.1.1
+
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (27 targets)
+    Target 'Soundscape' in project 'GuideDogs'
+        ➜ Explicit dependency on target 'SDWebImageSwiftUI' in project 'SDWebImageSwiftUI'
+        ➜ Explicit dependency on target 'Reachability' in project 'Reachability'
+        ➜ Explicit dependency on target 'NVActivityIndicatorView' in project 'NVActivityIndicatorView'
+        ➜ Explicit dependency on target 'CocoaLumberjackSwift' in project 'CocoaLumberjack'
+        ➜ Explicit dependency on target 'CoreGPX' in project 'CoreGPX'
+        ➜ Explicit dependency on target 'SDWebImage' in project 'SDWebImage'
+        ➜ Explicit dependency on target 'RealmSwift' in project 'Realm'
+        ➜ Explicit dependency on target 'Realm' in project 'Realm'
+        ➜ Explicit dependency on target 'DZNEmptyDataSet' in project 'DZNEmptyDataSet'
+    Target 'DZNEmptyDataSet' in project 'DZNEmptyDataSet'
+        ➜ Explicit dependency on target 'DZNEmptyDataSet' in project 'DZNEmptyDataSet'
+    Target 'DZNEmptyDataSet' in project 'DZNEmptyDataSet' (no dependencies)
+    Target 'Realm' in project 'Realm'
+        ➜ Explicit dependency on target 'Realm' in project 'Realm'
+        ➜ Explicit dependency on target 'RealmCore' in project 'RealmDatabase'
+    Target 'RealmSwift' in project 'Realm'
+        ➜ Explicit dependency on target 'Realm' in project 'Realm'
+        ➜ Explicit dependency on target 'RealmSwift' in project 'Realm'
+        ➜ Explicit dependency on target 'RealmCore' in project 'RealmDatabase'
+    Target 'RealmSwift' in project 'Realm'
+        ➜ Explicit dependency on target 'Realm' in project 'Realm'
+        ➜ Explicit dependency on target 'RealmCore' in project 'RealmDatabase'
+    Target 'Realm' in project 'Realm'
+        ➜ Explicit dependency on target 'RealmCore' in project 'RealmDatabase'
+    Target 'RealmCore' in project 'RealmDatabase'
+        ➜ Explicit dependency on target 'RealmCore' in project 'RealmDatabase'
+        ➜ Explicit dependency on target 'Bid' in project 'RealmDatabase'
+    Target 'RealmCore' in project 'RealmDatabase'
+        ➜ Explicit dependency on target 'Bid' in project 'RealmDatabase'
+    Target 'Bid' in project 'RealmDatabase' (no dependencies)
+    Target 'CoreGPX' in project 'CoreGPX'
+        ➜ Explicit dependency on target 'CoreGPX' in project 'CoreGPX'
+    Target 'CoreGPX' in project 'CoreGPX' (no dependencies)
+    Target 'CocoaLumberjackSwift' in project 'CocoaLumberjack'
+        ➜ Explicit dependency on target 'CocoaLumberjackSwift' in project 'CocoaLumberjack'
+        ➜ Explicit dependency on target 'CocoaLumberjack' in project 'CocoaLumberjack'
+        ➜ Explicit dependency on target 'CocoaLumberjackSwiftSupport' in project 'CocoaLumberjack'
+    Target 'CocoaLumberjackSwift' in project 'CocoaLumberjack'
+        ➜ Explicit dependency on target 'CocoaLumberjack' in project 'CocoaLumberjack'
+        ➜ Explicit dependency on target 'CocoaLumberjackSwiftSupport' in project 'CocoaLumberjack'
+    Target 'CocoaLumberjackSwiftSupport' in project 'CocoaLumberjack'
+        ➜ Explicit dependency on target 'CocoaLumberjack' in project 'CocoaLumberjack'
+    Target 'CocoaLumberjack' in project 'CocoaLumberjack'
+        ➜ Explicit dependency on target 'CocoaLumberjack_CocoaLumberjack' in project 'CocoaLumberjack'
+    Target 'CocoaLumberjack_CocoaLumberjack' in project 'CocoaLumberjack' (no dependencies)
+    Target 'NVActivityIndicatorView' in project 'NVActivityIndicatorView'
+        ➜ Explicit dependency on target 'NVActivityIndicatorView' in project 'NVActivityIndicatorView'
+    Target 'NVActivityIndicatorView' in project 'NVActivityIndicatorView' (no dependencies)
+    Target 'Reachability' in project 'Reachability'
+        ➜ Explicit dependency on target 'Reachability' in project 'Reachability'
+        ➜ Explicit dependency on target 'Reachability_Reachability' in project 'Reachability'
+    Target 'Reachability' in project 'Reachability'
+        ➜ Explicit dependency on target 'Reachability_Reachability' in project 'Reachability'
+    Target 'Reachability_Reachability' in project 'Reachability' (no dependencies)
+    Target 'SDWebImageSwiftUI' in project 'SDWebImageSwiftUI'
+        ➜ Explicit dependency on target 'SDWebImageSwiftUI' in project 'SDWebImageSwiftUI'
+        ➜ Explicit dependency on target 'SDWebImage' in project 'SDWebImage'
+    Target 'SDWebImageSwiftUI' in project 'SDWebImageSwiftUI'
+        ➜ Explicit dependency on target 'SDWebImage' in project 'SDWebImage'
+    Target 'SDWebImage' in project 'SDWebImage'
+        ➜ Explicit dependency on target 'SDWebImage' in project 'SDWebImage'
+        ➜ Explicit dependency on target 'SDWebImage_SDWebImage' in project 'SDWebImage'
+    Target 'SDWebImage' in project 'SDWebImage'
+        ➜ Explicit dependency on target 'SDWebImage_SDWebImage' in project 'SDWebImage'
+    Target 'SDWebImage_SDWebImage' in project 'SDWebImage' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.0.sdk -x objective-c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.0.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.0.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --version --output-format xml1
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.0.sdk -x c++ -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.0.sdk -x objective-c++ -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/usr/bin/actool --print-asset-tag-combinations --output-format xml1 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Assets/Images/Symbols.xcassets /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Assets/Images/Images.xcassets /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Assets/Images/WhatsNew.xcassets /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Assets/Sounds/Sounds.xcassets /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Assets/Colors/Colors.xcassets
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/usr/bin/actool --version --output-format xml1
+
+Build description signature: 949eff5980dced64dd8857ec3198b969
+Build description path: /Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/GuideDogs-embxebplwfnjmrbflfdjjrgklikw/Build/Intermediates.noindex/XCBuildData/949eff5980dced64dd8857ec3198b969.xcbuilddata
+ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.0.sdk /Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/SDKStatCaches.noindex/iphonesimulator26.0-23A339-26257891a6c027eb51374368541b8346.sdkstatcache
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs.xcodeproj
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.0.sdk -o /Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/SDKStatCaches.noindex/iphonesimulator26.0-23A339-26257891a6c027eb51374368541b8346.sdkstatcache
+
+ProcessInfoPlistFile /Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/GuideDogs-embxebplwfnjmrbflfdjjrgklikw/Build/Products/Debug-iphonesimulator/Reachability_Reachability.bundle/Info.plist /Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/GuideDogs-embxebplwfnjmrbflfdjjrgklikw/Build/Intermediates.noindex/Reachability.build/Debug-iphonesimulator/Reachability_Reachability.build/empty-Reachability_Reachability.plist (in target 'Reachability_Reachability' from project 'Reachability')
+    cd /Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/GuideDogs-embxebplwfnjmrbflfdjjrgklikw/SourcePackages/checkouts/Reachability.swift
+    builtin-infoPlistUtility /Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/GuideDogs-embxebplwfnjmrbflfdjjrgklikw/Build/Intermediates.noindex/Reachability.build/Debug-iphonesimulator/Reachability_Reachability.build/empty-Reachability_Reachability.plist -producttype com.apple.product-type.bundle -expandbuildsettings -format binary -platform iphonesimulator -o /Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/GuideDogs-embxebplwfnjmrbflfdjjrgklikw/Build/Products/Debug-iphonesimulator/Reachability_Reachability.bundle/Info.plist
+
+ProcessInfoPlistFile /Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/GuideDogs-embxebplwfnjmrbflfdjjrgklikw/Build/Products/Debug-iphonesimulator/SDWebImage_SDWebImage.bundle/Info.plist /Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/GuideDogs-embxebplwfnjmrbflfdjjrgklikw/Build/Intermediates.noindex/SDWebImage.build/Debug-iphonesimulator/SDWebImage_SDWebImage.build/empty-SDWebImage_SDWebImage.plist (in target 'SDWebImage_SDWebImage' from project 'SDWebImage')
+    cd /Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/GuideDogs-embxebplwfnjmrbflfdjjrgklikw/SourcePackages/checkouts/SDWebImage
+    builtin-infoPlistUtility /Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/GuideDogs-embxebplwfnjmrbflfdjjrgklikw/Build/Intermediates.noindex/SDWebImage.build/Debug-iphonesimulator/SDWebImage_SDWebImage.build/empty-SDWebImage_SDWebImage.plist -producttype com.apple.product-type.bundle -expandbuildsettings -format binary -platform iphonesimulator -o /Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/GuideDogs-embxebplwfnjmrbflfdjjrgklikw/Build/Products/Debug-iphonesimulator/SDWebImage_SDWebImage.bundle/Info.plist
+
+ProcessInfoPlistFile /Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/GuideDogs-embxebplwfnjmrbflfdjjrgklikw/Build/Products/Debug-iphonesimulator/CocoaLumberjack_CocoaLumberjack.bundle/Info.plist /Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/GuideDogs-embxebplwfnjmrbflfdjjrgklikw/Build/Intermediates.noindex/CocoaLumberjack.build/Debug-iphonesimulator/CocoaLumberjack_CocoaLumberjack.build/empty-CocoaLumberjack_CocoaLumberjack.plist (in target 'CocoaLumberjack_CocoaLumberjack' from project 'CocoaLumberjack')
+    cd /Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/GuideDogs-embxebplwfnjmrbflfdjjrgklikw/SourcePackages/checkouts/CocoaLumberjack
+    builtin-infoPlistUtility /Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/GuideDogs-embxebplwfnjmrbflfdjjrgklikw/Build/Intermediates.noindex/CocoaLumberjack.build/Debug-iphonesimulator/CocoaLumberjack_CocoaLumberjack.build/empty-CocoaLumberjack_CocoaLumberjack.plist -producttype com.apple.product-type.bundle -expandbuildsettings -format binary -platform iphonesimulator -o /Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/GuideDogs-embxebplwfnjmrbflfdjjrgklikw/Build/Products/Debug-iphonesimulator/CocoaLumberjack_CocoaLumberjack.bundle/Info.plist
+
+warning: Run script build phase 'Localization Validation' will be run during every build because it does not specify any outputs. To address this issue, either add output dependencies to the script phase, or configure it to run in every build by unchecking "Based on dependency analysis" in the script phase. (in target 'Soundscape' from project 'GuideDogs')
+ProcessProductPackaging /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Assets/PropertyLists/Soundscape.entitlements /Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/GuideDogs-embxebplwfnjmrbflfdjjrgklikw/Build/Intermediates.noindex/GuideDogs.build/Debug-iphonesimulator/Soundscape.build/Soundscape.app-Simulated.xcent (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+    Entitlements:
+    
+    {
+    "application-identifier" = "X4H33NKGKY.services.soundscape-debug";
+    "com.apple.developer.associated-domains" =     (
+        "applinks:share.soundscape.services"
+    );
+    "com.apple.developer.icloud-container-identifiers" =     (
+    );
+    "com.apple.developer.ubiquity-kvstore-identifier" = "X4H33NKGKY.services.soundscape-debug";
+}
+    
+    builtin-productPackagingUtility /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Assets/PropertyLists/Soundscape.entitlements -entitlements -format xml -o /Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/GuideDogs-embxebplwfnjmrbflfdjjrgklikw/Build/Intermediates.noindex/GuideDogs.build/Debug-iphonesimulator/Soundscape.build/Soundscape.app-Simulated.xcent
+
+ProcessProductPackaging /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Assets/PropertyLists/Soundscape.entitlements /Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/GuideDogs-embxebplwfnjmrbflfdjjrgklikw/Build/Intermediates.noindex/GuideDogs.build/Debug-iphonesimulator/Soundscape.build/Soundscape.app.xcent (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+    Entitlements:
+    
+    {
+}
+    
+    builtin-productPackagingUtility /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Assets/PropertyLists/Soundscape.entitlements -entitlements -format xml -o /Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/GuideDogs-embxebplwfnjmrbflfdjjrgklikw/Build/Intermediates.noindex/GuideDogs.build/Debug-iphonesimulator/Soundscape.build/Soundscape.app.xcent
+
+ProcessProductPackagingDER /Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/GuideDogs-embxebplwfnjmrbflfdjjrgklikw/Build/Intermediates.noindex/GuideDogs.build/Debug-iphonesimulator/Soundscape.build/Soundscape.app.xcent /Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/GuideDogs-embxebplwfnjmrbflfdjjrgklikw/Build/Intermediates.noindex/GuideDogs.build/Debug-iphonesimulator/Soundscape.build/Soundscape.app.xcent.der (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    /usr/bin/derq query -f xml -i /Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/GuideDogs-embxebplwfnjmrbflfdjjrgklikw/Build/Intermediates.noindex/GuideDogs.build/Debug-iphonesimulator/Soundscape.build/Soundscape.app.xcent -o /Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/GuideDogs-embxebplwfnjmrbflfdjjrgklikw/Build/Intermediates.noindex/GuideDogs.build/Debug-iphonesimulator/Soundscape.build/Soundscape.app.xcent.der --raw
+
+ProcessProductPackagingDER /Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/GuideDogs-embxebplwfnjmrbflfdjjrgklikw/Build/Intermediates.noindex/GuideDogs.build/Debug-iphonesimulator/Soundscape.build/Soundscape.app-Simulated.xcent /Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/GuideDogs-embxebplwfnjmrbflfdjjrgklikw/Build/Intermediates.noindex/GuideDogs.build/Debug-iphonesimulator/Soundscape.build/Soundscape.app-Simulated.xcent.der (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    /usr/bin/derq query -f xml -i /Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/GuideDogs-embxebplwfnjmrbflfdjjrgklikw/Build/Intermediates.noindex/GuideDogs.build/Debug-iphonesimulator/Soundscape.build/Soundscape.app-Simulated.xcent -o /Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/GuideDogs-embxebplwfnjmrbflfdjjrgklikw/Build/Intermediates.noindex/GuideDogs.build/Debug-iphonesimulator/Soundscape.build/Soundscape.app-Simulated.xcent.der --raw
+
+SwiftDriver Soundscape normal arm64 com.apple.xcode.tools.swift.compiler (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name Soundscape -Onone -enforce-exclusivity\=checked @/Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/GuideDogs-embxebplwfnjmrbflfdjjrgklikw/Build/Intermediates.noindex/GuideDogs.build/Debug-iphonesimulator/Soundscape.build/Objects-normal/arm64/Soundscape.SwiftFileList -Xcc -fmodule-map-file\=/Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/GuideDogs-embxebplwfnjmrbflfdjjrgklikw/Build/Intermediates.noindex/GeneratedModuleMaps-iphonesimulator/CocoaLumberjackSwiftSupport.modulemap -Xcc -fmodule-map-file\=/Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/GuideDogs-embxebplwfnjmrbflfdjjrgklikw/Build/Intermediates.noindex/GeneratedModuleMaps-iphonesimulator/CocoaLumberjack.modulemap -Xcc -fmodule-map-file\=/Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/GuideDogs-embxebplwfnjmrbflfdjjrgklikw/Build/Intermediates.noindex/GeneratedModuleMaps-iphonesimulator/SDWebImage.modulemap -Xcc -fmodule-map-file\=/Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/GuideDogs-embxebplwfnjmrbflfdjjrgklikw/Build/Intermediates.noindex/GeneratedModuleMaps-iphonesimulator/Bid.modulemap -Xcc -fmodule-map-file\=/Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/GuideDogs-embxebplwfnjmrbflfdjjrgklikw/Build/Intermediates.noindex/GeneratedModuleMaps-iphonesimulator/DZNEmptyDataSet.modulemap -D FF_DEVELOPER_TOOLS -D FF_EXPERIMENT_CONFIG -DDEBUG -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.0.sdk -target arm64-apple-ios15.0-simulator -g -module-cache-path /Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -profile-coverage-mapping -profile-generate -sanitize\=thread -enable-testing -index-store-path /Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/GuideDogs-embxebplwfnjmrbflfdjjrgklikw/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/GuideDogs-embxebplwfnjmrbflfdjjrgklikw/Build/Products/Debug-iphonesimulator -F /Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/GuideDogs-embxebplwfnjmrbflfdjjrgklikw/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/GuideDogs-embxebplwfnjmrbflfdjjrgklikw/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/GuideDogs-embxebplwfnjmrbflfdjjrgklikw/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/GuideDogs-embxebplwfnjmrbflfdjjrgklikw/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/GuideDogs-embxebplwfnjmrbflfdjjrgklikw/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/GuideDogs-embxebplwfnjmrbflfdjjrgklikw/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/GuideDogs-embxebplwfnjmrbflfdjjrgklikw/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/GuideDogs-embxebplwfnjmrbflfdjjrgklikw/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/GuideDogs-embxebplwfnjmrbflfdjjrgklikw/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/GuideDogs-embxebplwfnjmrbflfdjjrgklikw/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/GuideDogs-embxebplwfnjmrbflfdjjrgklikw/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/GuideDogs-embxebplwfnjmrbflfdjjrgklikw/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/GuideDogs-embxebplwfnjmrbflfdjjrgklikw/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/GuideDogs-embxebplwfnjmrbflfdjjrgklikw/Build/Products/Debug-iphonesimulator -F /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/SDKStatCaches.noindex/iphonesimulator26.0-23A339-26257891a6c027eb51374368541b8346.sdkstatcache -output-file-map /Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/GuideDogs-embxebplwfnjmrbflfdjjrgklikw/Build/Intermediates.noindex/GuideDogs.build/Debug-iphonesimulator/Soundscape.build/Objects-normal-tsan/arm64/Soundscape-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/GuideDogs-embxebplwfnjmrbflfdjjrgklikw/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/ModuleCache.noindex -sdk-module-cache-path /Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/GuideDogs-embxebplwfnjmrbflfdjjrgklikw/Build/Intermediates.noindex/GuideDogs.build/Debug-iphonesimulator/Soundscape.build/Objects-normal-tsan/arm64/Soundscape.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -I/Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/GuideDogs-embxebplwfnjmrbflfdjjrgklikw/Build/Intermediates.noindex/GuideDogs.build/Debug-iphonesimulator/Soundscape.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/GuideDogs-embxebplwfnjmrbflfdjjrgklikw/Build/Intermediates.noindex/GuideDogs.build/Debug-iphonesimulator/Soundscape.build/Objects-normal-tsan/arm64/Soundscape_const_extract_protocols.json -Xcc -iquote -Xcc /Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/GuideDogs-embxebplwfnjmrbflfdjjrgklikw/Build/Intermediates.noindex/GuideDogs.build/Debug-iphonesimulator/Soundscape.build/Soundscape-generated-files.hmap -Xcc -I/Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/GuideDogs-embxebplwfnjmrbflfdjjrgklikw/Build/Intermediates.noindex/GuideDogs.build/Debug-iphonesimulator/Soundscape.build/Soundscape-own-target-headers.hmap -Xcc -I/Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/GuideDogs-embxebplwfnjmrbflfdjjrgklikw/Build/Intermediates.noindex/GuideDogs.build/Debug-iphonesimulator/Soundscape.build/Soundscape-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/GuideDogs-embxebplwfnjmrbflfdjjrgklikw/Build/Intermediates.noindex/GuideDogs.build/Debug-iphonesimulator/GuideDogs-51aef7e6364f83c51f2071c5fff7da88-VFS-iphonesimulator/all-product-headers.yaml -Xcc -iquote -Xcc /Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/GuideDogs-embxebplwfnjmrbflfdjjrgklikw/Build/Intermediates.noindex/GuideDogs.build/Debug-iphonesimulator/Soundscape.build/Soundscape-project-headers.hmap -Xcc -iquote -Xcc /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/AudioKitV2.1/AudioKit -Xcc -I/Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/GuideDogs-embxebplwfnjmrbflfdjjrgklikw/SourcePackages/checkouts/CocoaLumberjack/Sources/CocoaLumberjackSwiftSupport/include -Xcc -I/Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/GuideDogs-embxebplwfnjmrbflfdjjrgklikw/SourcePackages/checkouts/CocoaLumberjack/Sources/CocoaLumberjack/include -Xcc -I/Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/GuideDogs-embxebplwfnjmrbflfdjjrgklikw/SourcePackages/checkouts/SDWebImage/SDWebImage/include -Xcc -I/Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/GuideDogs-embxebplwfnjmrbflfdjjrgklikw/SourcePackages/checkouts/realm-core/src/external/IntelRDFPMathLib20U2/LIBRARY/src -Xcc -I/Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/GuideDogs-embxebplwfnjmrbflfdjjrgklikw/SourcePackages/checkouts/realm-core/src -Xcc -I/Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/GuideDogs-embxebplwfnjmrbflfdjjrgklikw/SourcePackages/checkouts/realm-cocoa/include -Xcc -I/Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/GuideDogs-embxebplwfnjmrbflfdjjrgklikw/SourcePackages/checkouts/DZNEmptyDataSet/Source -Xcc -I/Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/GuideDogs-embxebplwfnjmrbflfdjjrgklikw/Build/Products/Debug-iphonesimulator/include -Xcc -I/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.0.sdk/usr/include/libxml2 -Xcc -I/Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/GuideDogs-embxebplwfnjmrbflfdjjrgklikw/Build/Intermediates.noindex/GuideDogs.build/Debug-iphonesimulator/Soundscape.build/DerivedSources-normal/arm64 -Xcc -I/Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/GuideDogs-embxebplwfnjmrbflfdjjrgklikw/Build/Intermediates.noindex/GuideDogs.build/Debug-iphonesimulator/Soundscape.build/DerivedSources/arm64 -Xcc -I/Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/GuideDogs-embxebplwfnjmrbflfdjjrgklikw/Build/Intermediates.noindex/GuideDogs.build/Debug-iphonesimulator/Soundscape.build/DerivedSources -Xcc -DDEBUG\=1 -Xcc -DTESTING\=0 -Xcc -DDEBUG_SAVE_LOGS\=0 -Xcc -DTELEMETRY_ENABLED\=0 -emit-objc-header -emit-objc-header-path /Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/GuideDogs-embxebplwfnjmrbflfdjjrgklikw/Build/Intermediates.noindex/GuideDogs.build/Debug-iphonesimulator/Soundscape.build/Objects-normal-tsan/arm64/Soundscape-Swift.h -import-objc-header /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/Soundscape-Bridging-Header.h -working-directory /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios -experimental-emit-module-separately -disable-cmo
+/Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual UI/Controls/HeadingKnob.swift:39:12: warning: extraneous whitespace between attribute name and '('; this is an error in the Swift 6 language mode
+    private (set) var value: Float = 0
+           ^
+/Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual UI/Controls/HeadingKnob.swift:141:12: warning: extraneous whitespace between attribute name and '('; this is an error in the Swift 6 language mode
+    private (set) var pointerAngle: CGFloat = CGFloat(-Double.pi) / 2
+           ^
+/Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual UI/Controls/HeadingKnob.swift:39:12: warning: Extraneous whitespace between attribute name and '('; this is an error in the Swift 6 language mode
+    private (set) var value: Float = 0
+           ^ (in target 'Soundscape' from project 'GuideDogs')
+/Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual UI/Controls/HeadingKnob.swift:141:12: warning: Extraneous whitespace between attribute name and '('; this is an error in the Swift 6 language mode
+    private (set) var pointerAngle: CGFloat = CGFloat(-Double.pi) / 2
+           ^ (in target 'Soundscape' from project 'GuideDogs')
+
+CompileAssetCatalogVariant thinned /Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/GuideDogs-embxebplwfnjmrbflfdjjrgklikw/Build/Products/Debug-iphonesimulator/Soundscape.app /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Assets/Images/Symbols.xcassets /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Assets/Images/Images.xcassets /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Assets/Images/WhatsNew.xcassets /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Assets/Sounds/Sounds.xcassets /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Assets/Colors/Colors.xcassets (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    /Applications/Xcode.app/Contents/Developer/usr/bin/actool /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Assets/Images/Symbols.xcassets /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Assets/Images/Images.xcassets /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Assets/Images/WhatsNew.xcassets /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Assets/Sounds/Sounds.xcassets /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Assets/Colors/Colors.xcassets --compile /Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/GuideDogs-embxebplwfnjmrbflfdjjrgklikw/Build/Intermediates.noindex/GuideDogs.build/Debug-iphonesimulator/Soundscape.build/assetcatalog_output/thinned --output-format human-readable-text --notices --warnings --export-dependency-info /Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/GuideDogs-embxebplwfnjmrbflfdjjrgklikw/Build/Intermediates.noindex/GuideDogs.build/Debug-iphonesimulator/Soundscape.build/assetcatalog_dependencies_thinned --output-partial-info-plist /Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/GuideDogs-embxebplwfnjmrbflfdjjrgklikw/Build/Intermediates.noindex/GuideDogs.build/Debug-iphonesimulator/Soundscape.build/assetcatalog_generated_info.plist_thinned --app-icon AppIcon\ Beta --compress-pngs --enable-on-demand-resources YES --filter-for-thinning-device-configuration iPhone18,3 --filter-for-device-os-version 26.0 --development-region en_US --target-device iphone --minimum-deployment-target 15.0 --platform iphonesimulator
+objc[51846]: Class _NoAnimationDelegate is implemented in both /Library/Developer/CoreSimulator/Volumes/iOS_23A343/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 26.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/SwiftUICore.framework/SwiftUICore (0x146140130) and /Library/Developer/CoreSimulator/Volumes/iOS_23A343/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 26.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore (0x1432a9198). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
+
+SwiftGeneratePch normal arm64 Compiling\ bridging\ header (in target 'Soundscape' from project 'GuideDogs')
+
+SwiftDriverJobDiscovery normal arm64 Compiling bridging header (in target 'Soundscape' from project 'GuideDogs')
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ Soundscape (in target 'Soundscape' from project 'GuideDogs')
+Failed frontend command:
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swift-frontend -frontend @/Users/ajiteshbankula/Library/Developer/Xcode/DerivedData/GuideDogs-embxebplwfnjmrbflfdjjrgklikw/Build/Intermediates.noindex/GuideDogs.build/Debug-iphonesimulator/Soundscape.build/Objects-normal-tsan/arm64/arguments-4803a0718b2fd81f1394c80868d4970939b1485d2a67c58e7c4130a4ee2c7653.resp
+
+EmitSwiftModule normal arm64 (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+/Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual UI/Controls/HeadingKnob.swift:141:12: warning: extraneous whitespace between attribute name and '('; this is an error in the Swift 6 language mode
+    private (set) var pointerAngle: CGFloat = CGFloat(-Double.pi) / 2
+           ^
+/Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Generators/Geocoding/Protocols/AddressGeocoderProtocol.swift:18:1: warning: sendability of function types in instance method 'geocodeAddressString(_:in:preferredLocale:completionHandler:)' does not match requirement in protocol 'AddressGeocoderProtocol'; this is an error in the Swift 6 language mode
+extension CLGeocoder: AddressGeocoderProtocol { }
+^
+/Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Generators/Geocoding/Protocols/AddressGeocoderProtocol.swift:13:10: note: expected sendability to match requirement here
+    func geocodeAddressString(_ addressString: String, in region: CLRegion?, preferredLocale locale: Locale?, completionHandler: @escaping CLGeocodeCompletionHandler)
+         ^
+/Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Generators/Geocoding/Protocols/AddressGeocoderProtocol.swift:18:1: warning: sendability of function types in instance method 'reverseGeocodeLocation(_:preferredLocale:completionHandler:)' does not match requirement in protocol 'AddressGeocoderProtocol'; this is an error in the Swift 6 language mode
+extension CLGeocoder: AddressGeocoderProtocol { }
+^
+/Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Generators/Geocoding/Protocols/AddressGeocoderProtocol.swift:14:10: note: expected sendability to match requirement here
+    func reverseGeocodeLocation(_ location: CLLocation, preferredLocale locale: Locale?, completionHandler: @escaping CLGeocodeCompletionHandler)
+         ^
+/Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/Framework Extensions/UI Class Extensions/UIDevice+Extensions.swift:107:1: warning: extension declares a conformance of imported type 'BatteryState' to imported protocol 'CustomStringConvertible'; this will not behave correctly if the owners of 'UIKit' introduce this conformance in the future
+extension UIDevice.BatteryState: CustomStringConvertible {
+^
+/Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/Framework Extensions/UI Class Extensions/UIDevice+Extensions.swift:107:1: note: add '@retroactive' to silence this warning
+extension UIDevice.BatteryState: CustomStringConvertible {
+^                                ~~~~~~~~~~~~~~~~~~~~~~~
+                                 @retroactive CustomStringConvertible
+/Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Devices/BLE/BLEManager.swift:284:1: warning: extension declares a conformance of imported type 'CBManagerState' to imported protocol 'CustomStringConvertible'; this will not behave correctly if the owners of 'CoreBluetooth' introduce this conformance in the future
+extension CBManagerState: CustomStringConvertible {
+^
+/Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Devices/BLE/BLEManager.swift:284:1: note: add '@retroactive' to silence this warning
+extension CBManagerState: CustomStringConvertible {
+^                         ~~~~~~~~~~~~~~~~~~~~~~~
+                          @retroactive CustomStringConvertible
+/Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/Logging/TelemetryHelper.swift:439:1: warning: extension declares a conformance of imported type 'State' to imported protocol 'CustomStringConvertible'; this will not behave correctly if the owners of 'UIKit' introduce this conformance in the future
+extension UIApplication.State: CustomStringConvertible {
+^
+/Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/Logging/TelemetryHelper.swift:439:1: note: add '@retroactive' to silence this warning
+extension UIApplication.State: CustomStringConvertible {
+^                              ~~~~~~~~~~~~~~~~~~~~~~~
+                               @retroactive CustomStringConvertible
+/Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/Framework Extensions/AVAudio Extensions/AVAudioSession+Extensions.swift:11:1: warning: extension declares a conformance of imported type 'RouteChangeReason' to imported protocol 'CustomStringConvertible'; this will not behave correctly if the owners of 'AVFAudio' introduce this conformance in the future
+extension AVAudioSession.RouteChangeReason: CustomStringConvertible {
+^
+/Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/Framework Extensions/AVAudio Extensions/AVAudioSession+Extensions.swift:11:1: note: add '@retroactive' to silence this warning
+extension AVAudioSession.RouteChangeReason: CustomStringConvertible {
+^                                           ~~~~~~~~~~~~~~~~~~~~~~~
+                                            @retroactive CustomStringConvertible
+/Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/Framework Extensions/AVAudio Extensions/AVAudioSession+Extensions.swift:27:1: warning: extension declares a conformance of imported type 'InterruptionType' to imported protocol 'CustomStringConvertible'; this will not behave correctly if the owners of 'AVFAudio' introduce this conformance in the future
+extension AVAudioSession.InterruptionType: CustomStringConvertible {
+^
+/Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/Framework Extensions/AVAudio Extensions/AVAudioSession+Extensions.swift:27:1: note: add '@retroactive' to silence this warning
+extension AVAudioSession.InterruptionType: CustomStringConvertible {
+^                                          ~~~~~~~~~~~~~~~~~~~~~~~
+                                           @retroactive CustomStringConvertible
+/Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/Framework Extensions/AVAudio Extensions/AVAudioSession+Extensions.swift:37:1: warning: extension declares a conformance of imported type 'SilenceSecondaryAudioHintType' to imported protocol 'CustomStringConvertible'; this will not behave correctly if the owners of 'AVFAudio' introduce this conformance in the future
+extension AVAudioSession.SilenceSecondaryAudioHintType: CustomStringConvertible {
+^
+/Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/Framework Extensions/AVAudio Extensions/AVAudioSession+Extensions.swift:37:1: note: add '@retroactive' to silence this warning
+extension AVAudioSession.SilenceSecondaryAudioHintType: CustomStringConvertible {
+^                                                       ~~~~~~~~~~~~~~~~~~~~~~~
+                                                        @retroactive CustomStringConvertible
+/Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/Framework Extensions/AVAudio Extensions/AVAudioSession+Extensions.swift:47:1: warning: extension declares a conformance of imported type 'ErrorCode' to imported protocol 'CustomStringConvertible'; this will not behave correctly if the owners of 'CoreAudioTypes' introduce this conformance in the future
+extension AVAudioSession.ErrorCode: CustomStringConvertible {
+^
+/Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/Framework Extensions/AVAudio Extensions/AVAudioSession+Extensions.swift:47:1: note: add '@retroactive' to silence this warning
+extension AVAudioSession.ErrorCode: CustomStringConvertible {
+^                                   ~~~~~~~~~~~~~~~~~~~~~~~
+                                    @retroactive CustomStringConvertible
+/Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual UI/Helpers/UITableView/UITableViewDataSource/TableViewDataSource.swift:40:16: warning: generic parameter 'Model' shadows generic parameter from outer scope with the same name; this is an error in the Swift 6 language mode
+    func model<Model>(for indexPath: IndexPath) -> Model? {
+               ^
+/Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual UI/Helpers/UITableView/UITableViewDataSource/TableViewDataSource.swift:15:27: note: 'Model' previously declared here
+class TableViewDataSource<Model, CellConfigurator: TableViewCellConfigurator>: NSObject, TableViewDataSourceProtocol where CellConfigurator.Model == Model {
+                          ^
+/Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Notifications/NotificationContainerManager.swift:47:25: warning: generic parameter 'T' shadows generic parameter from outer scope with the same name; this is an error in the Swift 6 language mode
+    func stateDidChange<T>(_ server: NotificationServer<T>) where T: NotificationProtocol {
+                        ^
+/Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Notifications/NotificationContainerManager.swift:11:36: note: 'T' previously declared here
+class NotificationContainerManager<T: NotificationProtocol> {
+                                   ^
+/Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Notifications/NotificationContainerManager.swift:55:23: warning: generic parameter 'T' shadows generic parameter from outer scope with the same name; this is an error in the Swift 6 language mode
+    func performSegue<T>(_ server: NotificationServer<T>, destination: ViewControllerRepresentable) where T: NotificationProtocol {
+                      ^
+/Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Notifications/NotificationContainerManager.swift:11:36: note: 'T' previously declared here
+class NotificationContainerManager<T: NotificationProtocol> {
+                                   ^
+/Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Notifications/NotificationContainerManager.swift:63:34: warning: generic parameter 'T' shadows generic parameter from outer scope with the same name; this is an error in the Swift 6 language mode
+    func popToRootViewController<T>(_ server: NotificationServer<T>) where T: NotificationProtocol {
+                                 ^
+/Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Notifications/NotificationContainerManager.swift:11:36: note: 'T' previously declared here
+class NotificationContainerManager<T: NotificationProtocol> {
+                                   ^
+/Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual UI/Controls/HeadingKnob.swift:39:12: warning: extraneous whitespace between attribute name and '('; this is an error in the Swift 6 language mode
+    private (set) var value: Float = 0
+           ^
+/Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Sensors/Motion/MotionActivityContext.swift:237:1: warning: extension declares a conformance of imported type 'CMMotionActivityConfidence' to imported protocol 'CustomStringConvertible'; this will not behave correctly if the owners of 'CoreMotion' introduce this conformance in the future
+extension CMMotionActivityConfidence: CustomStringConvertible {
+^
+/Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Sensors/Motion/MotionActivityContext.swift:237:1: note: add '@retroactive' to silence this warning
+extension CMMotionActivityConfidence: CustomStringConvertible {
+^                                     ~~~~~~~~~~~~~~~~~~~~~~~
+                                      @retroactive CustomStringConvertible
+/Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/Framework Extensions/Geo Extensions/CoreLocation+Extensions.swift:224:1: warning: extension declares a conformance of imported type 'CLLocationCoordinate2D' to imported protocol 'Equatable'; this will not behave correctly if the owners of '_LocationEssentials' introduce this conformance in the future
+extension CLLocationCoordinate2D: Equatable {
+^
+/Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/Framework Extensions/Geo Extensions/CoreLocation+Extensions.swift:224:1: note: add '@retroactive' to silence this warning
+extension CLLocationCoordinate2D: Equatable {
+^                                 ~~~~~~~~~
+                                  @retroactive Equatable
+/Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/Framework Extensions/Geo Extensions/CoreLocation+Extensions.swift:234:1: warning: extension declares a conformance of imported type 'CLLocationCoordinate2D' to imported protocol 'CustomStringConvertible'; this will not behave correctly if the owners of '_LocationEssentials' introduce this conformance in the future
+extension CLLocationCoordinate2D: CustomStringConvertible {
+^
+/Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/Framework Extensions/Geo Extensions/CoreLocation+Extensions.swift:234:1: note: add '@retroactive' to silence this warning
+extension CLLocationCoordinate2D: CustomStringConvertible {
+^                                 ~~~~~~~~~~~~~~~~~~~~~~~
+                                  @retroactive CustomStringConvertible
+/Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual UI/Controls/Main Menu/MenuView.swift:64:16: warning: 'showsTouchWhenHighlighted' was deprecated in iOS 15.0: This property is ignored when using UIButtonConfiguration
+        button.showsTouchWhenHighlighted = true
+               ^
+/Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Devices/ESP32BeltDevice.swift:144:1: error: type 'ESP32BeltDevice' does not conform to protocol 'BLEDeviceDelegate'
+extension ESP32BeltDevice: BLEManagerScanDelegate, BLEDeviceDelegate {
+^
+/Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Devices/ESP32BeltDevice.swift:144:1: note: add stubs for conformance
+extension ESP32BeltDevice: BLEManagerScanDelegate, BLEDeviceDelegate {
+^
+/Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Devices/BLE/BLEDevice.swift:13:10: note: protocol requires function 'didConnect' with type '(any BLEDevice) -> ()'
+    func didConnect(_ device: BLEDevice)
+         ^
+/Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Devices/BLE/BLEDevice.swift:14:10: note: protocol requires function 'didUpdate(_:name:)' with type '(any BLEDevice, String?) -> ()'
+    func didUpdate(_ device: BLEDevice, name: String?)
+         ^
+
+SwiftCompile normal arm64 Compiling\ CodeableDirection.swift,\ HeadphoneMotionManagerStatus.swift,\ ViewControllerRepresentable.swift,\ GPXTracker.swift,\ RouteParameters.swift,\ NewFeaturesViewController.swift,\ EntityParameters.swift,\ ThreadSafeValue.swift,\ BaseTutorialViewController.swift,\ RouteDetail.swift,\ DeviceManager.swift,\ OnboardingGenerator.swift,\ UniversalLinkParameters.swift,\ BeaconDetailLocalizedLabel.swift,\ DebugSettingsContext.swift,\ MapViewControllerRepresentable.swift,\ ConditionalAccessibilityAction.swift,\ Result+Extensions.swift,\ RequestToken.swift,\ LayeredSound.swift,\ BeaconDetail.swift,\ GeocodedAddress.swift,\ UITextField+Extensions.swift,\ View+Extensions.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Data/Models/Helpers/CodeableDirection.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Sensors/Motion/Headphone\ Motion/HeadphoneMotionManagerStatus.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Helpers/View\ Controller\ Representable/Protocol/ViewControllerRepresentable.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Sensors/Geolocation/GPX\ Simulator/GPXTracker.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Data/Serialization/RouteParameters.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Controls/New\ Feature\ Announcement/NewFeaturesViewController.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Data/Serialization/EntityParameters.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/Data\ Structures/ThreadSafeValue.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/View\ Controllers/Tutorials/BaseTutorialViewController.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Helpers/Routes/Route\ Detail/RouteDetail.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Devices/DeviceManager.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Behaviors/Onboarding/OnboardingGenerator.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/App\ Delegate/User\ Activities/Universal\ Links/Parameters/UniversalLinkParameters.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Helpers/Beacon/Label/BeaconDetailLocalizedLabel.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/Settings/DebugSettingsContext.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/View\ Controllers/Map/MapViewControllerRepresentable.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Modifiers/ConditionalAccessibilityAction.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/Framework\ Extensions/Base\ Type\ Extensions/Result+Extensions.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Data/Services/Helpers/RequestToken.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Audio/Sounds/LayeredSound.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Helpers/Beacon/BeaconDetail.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Generators/Geocoding/Data\ Model/GeocodedAddress.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/Framework\ Extensions/UI\ Class\ Extensions/UITextField+Extensions.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/Framework\ Extensions/SwiftUI/View+Extensions.swift (in target 'Soundscape' from project 'GuideDogs')
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Data/Models/Helpers/CodeableDirection.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Sensors/Motion/Headphone\ Motion/HeadphoneMotionManagerStatus.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Helpers/View\ Controller\ Representable/Protocol/ViewControllerRepresentable.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Sensors/Geolocation/GPX\ Simulator/GPXTracker.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Data/Serialization/RouteParameters.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Controls/New\ Feature\ Announcement/NewFeaturesViewController.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Data/Serialization/EntityParameters.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/Data\ Structures/ThreadSafeValue.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/View\ Controllers/Tutorials/BaseTutorialViewController.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Helpers/Routes/Route\ Detail/RouteDetail.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Devices/DeviceManager.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Behaviors/Onboarding/OnboardingGenerator.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/App\ Delegate/User\ Activities/Universal\ Links/Parameters/UniversalLinkParameters.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Helpers/Beacon/Label/BeaconDetailLocalizedLabel.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/Settings/DebugSettingsContext.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/View\ Controllers/Map/MapViewControllerRepresentable.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Modifiers/ConditionalAccessibilityAction.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/Framework\ Extensions/Base\ Type\ Extensions/Result+Extensions.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Data/Services/Helpers/RequestToken.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Audio/Sounds/LayeredSound.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Helpers/Beacon/BeaconDetail.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Generators/Geocoding/Data\ Model/GeocodedAddress.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/Framework\ Extensions/UI\ Class\ Extensions/UITextField+Extensions.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+/Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/Framework Extensions/UI Class Extensions/UITextField+Extensions.swift:19:21: warning: 'showsTouchWhenHighlighted' was deprecated in iOS 15.0: This property is ignored when using UIButtonConfiguration
+        clearButton.showsTouchWhenHighlighted = true
+                    ^
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/Framework\ Extensions/SwiftUI/View+Extensions.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 Compiling\ BannerViewController.swift,\ RouteActionDelegate.swift,\ FeaturePageViewController.swift,\ SearchResultError.swift,\ UniversalLinkHandler.swift,\ IntersectionRoadId.swift,\ ReferenceEntity.swift,\ SpatialDataView.swift,\ EnableLocationServicesViewController.swift,\ DestinationTutorialPage.swift,\ GuidedTourStateStore.swift,\ String+Extension.swift,\ GeolocationManagerUpdateDelegate.swift,\ NavigationController.swift,\ EnableMotionFitnessViewController.swift,\ StandbyViewController.swift,\ Locatable.swift,\ CustomDisclosureTableViewCell.swift,\ EditableMapViewController.swift,\ RouteCompleteViewRepresentable.swift,\ RealmHelper.swift,\ SearchTableViewCellConfigurator.swift,\ GPXExtensions.swift,\ VoiceTableViewCellDelegate.swift,\ Int+GDAExtension.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/View\ Controllers/Notifications/BannerViewController.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Helpers/Routes/Route\ Action/RouteActionDelegate.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Controls/New\ Feature\ Announcement/FeaturePageViewController.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Helpers/Search/SearchResultError.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/App\ Delegate/User\ Activities/Universal\ Links/Handlers/UniversalLinkHandler.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Data/Models/Cache\ Models/IntersectionRoadId.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Data/Models/Database\ Models/ReferenceEntity.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Data/Spatial\ Data/SpatialDataView.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/View\ Controllers/Permissions/EnableLocationServicesViewController.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/View\ Controllers/Tutorials/Destination/DestinationTutorialPage.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Observable\ Data\ Stores/GuidedTourStateStore.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/Framework\ Extensions/String\ Extensions/String+Extension.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Sensors/Geolocation/Geolocation\ Manager/GeolocationManagerUpdateDelegate.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/View\ Controllers/NavigationController.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/View\ Controllers/Permissions/EnableMotionFitnessViewController.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/View\ Controllers/StandbyViewController.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Data/Models/Protocols/Locatable.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Controls/CustomDisclosureTableViewCell.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/View\ Controllers/POI\ Table/Location\ Detail/EditableMapViewController.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Helpers/View\ Controller\ Representable/RouteCompleteViewRepresentable.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Data/Models/Helpers/RealmHelper.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Helpers/UITableView/UITableViewCell/SearchTableViewCellConfigurator.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/Framework\ Extensions/Geo\ Extensions/GPXExtensions.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Controls/Voice\ Settings/VoiceTableViewCellDelegate.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/Framework\ Extensions/Base\ Type\ Extensions/Int+GDAExtension.swift (in target 'Soundscape' from project 'GuideDogs')
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/View\ Controllers/Notifications/BannerViewController.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Helpers/Routes/Route\ Action/RouteActionDelegate.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Controls/New\ Feature\ Announcement/FeaturePageViewController.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Helpers/Search/SearchResultError.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/App\ Delegate/User\ Activities/Universal\ Links/Handlers/UniversalLinkHandler.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Data/Models/Cache\ Models/IntersectionRoadId.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Data/Models/Database\ Models/ReferenceEntity.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Data/Spatial\ Data/SpatialDataView.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/View\ Controllers/Permissions/EnableLocationServicesViewController.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/View\ Controllers/Tutorials/Destination/DestinationTutorialPage.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Observable\ Data\ Stores/GuidedTourStateStore.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/Framework\ Extensions/String\ Extensions/String+Extension.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Sensors/Geolocation/Geolocation\ Manager/GeolocationManagerUpdateDelegate.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/View\ Controllers/NavigationController.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/View\ Controllers/Permissions/EnableMotionFitnessViewController.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/View\ Controllers/StandbyViewController.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Data/Models/Protocols/Locatable.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Controls/CustomDisclosureTableViewCell.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/View\ Controllers/POI\ Table/Location\ Detail/EditableMapViewController.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Helpers/View\ Controller\ Representable/RouteCompleteViewRepresentable.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Data/Models/Helpers/RealmHelper.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Helpers/UITableView/UITableViewCell/SearchTableViewCellConfigurator.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/Framework\ Extensions/Geo\ Extensions/GPXExtensions.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Controls/Voice\ Settings/VoiceTableViewCellDelegate.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/Framework\ Extensions/Base\ Type\ Extensions/Int+GDAExtension.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 Compiling\ LocationItemStyle.swift,\ LocationItemView.swift,\ AccessibilityEditableMapView.swift,\ AccessibilityEditableMapViewModel.swift,\ BeaconMapView.swift,\ IdentifiableAnnotation.swift,\ RouteCompleteView.swift,\ RouteEditTutorialView.swift,\ RouteEditView.swift,\ WaypointAddButton.swift,\ WaypointAddList.swift,\ WaypointAddListViewModel.swift,\ WaypointEditList.swift,\ EditMarkerView.swift,\ EmptyMarkerOrRoutesView.swift,\ LoadingMarkersOrRoutesView.swift,\ MarkerCell.swift,\ MarkersAndRoutesList.swift,\ MarkersAndRoutesListHostViewController.swift,\ MarkersAndRoutesListNavigationHelper.swift,\ MarkersList.swift,\ RouteCell.swift,\ RoutesList.swift,\ AuthorizationItemView.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Views/Location/Item/Style/LocationItemStyle.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Views/Location/Item/LocationItemView.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Views/Map/Accessibility/AccessibilityEditableMapView.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Views/Map/Accessibility/AccessibilityEditableMapViewModel.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Views/Map/Beacon/BeaconMapView.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Views/Map/IdentifiableAnnotation.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Views/Markers\ &\ Routes/Active\ Routes/RouteCompleteView.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Views/Markers\ &\ Routes/Add\ &\ Update\ Routes/RouteEditTutorialView.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Views/Markers\ &\ Routes/Add\ &\ Update\ Routes/RouteEditView.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Views/Markers\ &\ Routes/Add\ &\ Update\ Routes/WaypointAddButton.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Views/Markers\ &\ Routes/Add\ &\ Update\ Routes/WaypointAddList.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Views/Markers\ &\ Routes/Add\ &\ Update\ Routes/WaypointAddListViewModel.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Views/Markers\ &\ Routes/Add\ &\ Update\ Routes/WaypointEditList.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Views/Markers\ &\ Routes/Edit/EditMarkerView.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Views/Markers\ &\ Routes/EmptyMarkerOrRoutesView.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Views/Markers\ &\ Routes/LoadingMarkersOrRoutesView.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Views/Markers\ &\ Routes/MarkerCell.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Views/Markers\ &\ Routes/MarkersAndRoutesList.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Views/Markers\ &\ Routes/MarkersAndRoutesListHostViewController.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Views/Markers\ &\ Routes/MarkersAndRoutesListNavigationHelper.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Views/Markers\ &\ Routes/MarkersList.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Views/Markers\ &\ Routes/RouteCell.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Views/Markers\ &\ Routes/RoutesList.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Views/Onboarding/Authorizations/AuthorizationItemView.swift (in target 'Soundscape' from project 'GuideDogs')
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Views/Location/Item/Style/LocationItemStyle.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Views/Location/Item/LocationItemView.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Views/Map/Accessibility/AccessibilityEditableMapView.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Views/Map/Accessibility/AccessibilityEditableMapViewModel.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Views/Map/Beacon/BeaconMapView.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Views/Map/IdentifiableAnnotation.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Views/Markers\ &\ Routes/Active\ Routes/RouteCompleteView.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Views/Markers\ &\ Routes/Add\ &\ Update\ Routes/RouteEditTutorialView.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Views/Markers\ &\ Routes/Add\ &\ Update\ Routes/RouteEditView.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Views/Markers\ &\ Routes/Add\ &\ Update\ Routes/WaypointAddButton.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Views/Markers\ &\ Routes/Add\ &\ Update\ Routes/WaypointAddList.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Views/Markers\ &\ Routes/Add\ &\ Update\ Routes/WaypointAddListViewModel.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Views/Markers\ &\ Routes/Add\ &\ Update\ Routes/WaypointEditList.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Views/Markers\ &\ Routes/Edit/EditMarkerView.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Views/Markers\ &\ Routes/EmptyMarkerOrRoutesView.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Views/Markers\ &\ Routes/LoadingMarkersOrRoutesView.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Views/Markers\ &\ Routes/MarkerCell.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Views/Markers\ &\ Routes/MarkersAndRoutesList.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Views/Markers\ &\ Routes/MarkersAndRoutesListHostViewController.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Views/Markers\ &\ Routes/MarkersAndRoutesListNavigationHelper.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Views/Markers\ &\ Routes/MarkersList.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Views/Markers\ &\ Routes/RouteCell.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Views/Markers\ &\ Routes/RoutesList.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Views/Onboarding/Authorizations/AuthorizationItemView.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 Compiling\ BeaconOrientation.swift,\ NetworkClient.swift,\ TypePredicate.swift,\ HeadingKnob.swift,\ AnyViewControllerRepresentable.swift,\ LocationProviderDelegate.swift,\ OfflineHelpPageViewController.swift,\ GenericTableViewDelegate.swift,\ ModalNavigationView.swift,\ SearchResult.swift,\ HeadphoneMotionManagerWrapper.swift,\ CalloutRangeContext.swift,\ DismissableBannerViewController.swift,\ RouteStore.swift,\ BeaconCalloutGenerator.swift,\ EventProcessor.swift,\ BeaconOption.swift,\ LocationNameTextFormat.swift,\ FilterPredicate.swift,\ AlertContainer.swift,\ SmallBannerContainerView.swift,\ CloudKeyValueStore.swift,\ NotificationContainer.swift,\ BaseBLEDevice.swift,\ FilterBandParameters.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Haptics/BeaconOrientation.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Network\ Client/NetworkClient.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Data/Models/Helpers/Filter/Predicate\ Definitions/TypePredicate.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Controls/HeadingKnob.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Helpers/View\ Controller\ Representable/AnyViewControllerRepresentable.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Sensors/Geolocation/Provider\ Delegates/LocationProviderDelegate.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/View\ Controllers/Help/OfflineHelpPageViewController.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Helpers/UITableView/UITableViewDelegate/GenericTableViewDelegate.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Modifiers/Navigation/ModalNavigationView.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Helpers/Search/SearchResult.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Sensors/Motion/Headphone\ Motion/HeadphoneMotionManagerWrapper.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Behaviors/Default/CalloutRangeContext.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/View\ Controllers/Notifications/DismissableBannerViewController.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Observable\ Data\ Stores/RouteStore.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Behaviors/Default/BeaconCalloutGenerator.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Behaviors/EventProcessor.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Audio/Audio\ Beacon/BeaconOption.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Modifiers/Text/Locations/LocationNameTextFormat.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Data/Models/Helpers/Filter/FilterPredicate.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Notifications/Containers/AlertContainer.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Notifications/Containers/Banner\ Container\ View/SmallBannerContainerView.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Data/Services/Cloud/CloudKeyValueStore.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Notifications/Containers/NotificationContainer.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Devices/BLE/BaseBLEDevice.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Audio/FilterBandParameters.swift (in target 'Soundscape' from project 'GuideDogs')
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Haptics/BeaconOrientation.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Network\ Client/NetworkClient.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Data/Models/Helpers/Filter/Predicate\ Definitions/TypePredicate.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Controls/HeadingKnob.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+/Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual UI/Controls/HeadingKnob.swift:39:12: warning: extraneous whitespace between attribute name and '('; this is an error in the Swift 6 language mode
+    private (set) var value: Float = 0
+           ^
+/Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual UI/Controls/HeadingKnob.swift:141:12: warning: extraneous whitespace between attribute name and '('; this is an error in the Swift 6 language mode
+    private (set) var pointerAngle: CGFloat = CGFloat(-Double.pi) / 2
+           ^
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Helpers/View\ Controller\ Representable/AnyViewControllerRepresentable.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Sensors/Geolocation/Provider\ Delegates/LocationProviderDelegate.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/View\ Controllers/Help/OfflineHelpPageViewController.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Helpers/UITableView/UITableViewDelegate/GenericTableViewDelegate.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Modifiers/Navigation/ModalNavigationView.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Helpers/Search/SearchResult.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Sensors/Motion/Headphone\ Motion/HeadphoneMotionManagerWrapper.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Behaviors/Default/CalloutRangeContext.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/View\ Controllers/Notifications/DismissableBannerViewController.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Observable\ Data\ Stores/RouteStore.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Behaviors/Default/BeaconCalloutGenerator.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Behaviors/EventProcessor.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Audio/Audio\ Beacon/BeaconOption.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Modifiers/Text/Locations/LocationNameTextFormat.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Data/Models/Helpers/Filter/FilterPredicate.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Notifications/Containers/AlertContainer.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Notifications/Containers/Banner\ Container\ View/SmallBannerContainerView.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Data/Services/Cloud/CloudKeyValueStore.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Notifications/Containers/NotificationContainer.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Devices/BLE/BaseBLEDevice.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Audio/FilterBandParameters.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 Compiling\ EditableMapViewControllerDelegate.swift,\ HomeViewController.swift,\ LocationAccessibilityActionDelegate.swift,\ AppContext.swift,\ PreviewEvents.swift,\ VersionString.swift,\ BeaconActionHandler.swift,\ RouteResourceHandler.swift,\ GDASpatialDataResultEntity+Typeable.swift,\ ExternalNavigationApps.swift,\ LocationParameters.swift,\ MKMapViewDelegate+Extensions.swift,\ UniversalLinkVersion.swift,\ Route+Realm.swift,\ FeatureFlag.swift,\ UniversalLinkPath.swift,\ ExplorationGenerator.swift,\ ExperimentDescription.swift,\ Filter.swift,\ LocalizedLabel.swift,\ InsideLocationCallout.swift,\ CloudKeyValueStore+Routes.swift,\ UserActivityManager.swift,\ AuthorizationStatus.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Helpers/Location/Location\ Detail/Map/EditableMapViewControllerDelegate.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/View\ Controllers/Home/HomeViewController.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Helpers/Location/Location\ Action/LocationAccessibilityActionDelegate.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/AppContext.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Behaviors/Preview/PreviewEvents.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/Helpers/VersionString.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Helpers/Beacon/BeaconActionHandler.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/App\ Delegate/URL\ Resources/Handlers/RouteResourceHandler.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Data/Models/Extensions/OSM\ Entity/GDASpatialDataResultEntity+Typeable.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/ExternalNavigationApps.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Data/Serialization/LocationParameters.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/Framework\ Extensions/MapKit/MKMapViewDelegate+Extensions.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/App\ Delegate/User\ Activities/Universal\ Links/Components/UniversalLinkVersion.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Data/Models/Extensions/Route/Route+Realm.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/Feature\ Flags/FeatureFlag.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/App\ Delegate/User\ Activities/Universal\ Links/Components/UniversalLinkPath.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Behaviors/Default/ExplorationGenerator.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/Feature\ Flags/Experiment\ Flighting/ExperimentDescription.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Data/Models/Helpers/Filter/Filter.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Helpers/Labels\ &\ Text\ Views/LocalizedLabel.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Generators/Callouts/Location\ Callouts/InsideLocationCallout.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Data/Services/Cloud/CloudKeyValueStore+Routes.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/App\ Delegate/User\ Activities/UserActivityManager.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/Authorizations/AuthorizationStatus.swift (in target 'Soundscape' from project 'GuideDogs')
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Helpers/Location/Location\ Detail/Map/EditableMapViewControllerDelegate.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/View\ Controllers/Home/HomeViewController.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Helpers/Location/Location\ Action/LocationAccessibilityActionDelegate.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/AppContext.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Behaviors/Preview/PreviewEvents.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/Helpers/VersionString.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Helpers/Beacon/BeaconActionHandler.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/App\ Delegate/URL\ Resources/Handlers/RouteResourceHandler.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Data/Models/Extensions/OSM\ Entity/GDASpatialDataResultEntity+Typeable.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/ExternalNavigationApps.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Data/Serialization/LocationParameters.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/Framework\ Extensions/MapKit/MKMapViewDelegate+Extensions.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/App\ Delegate/User\ Activities/Universal\ Links/Components/UniversalLinkVersion.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Data/Models/Extensions/Route/Route+Realm.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/Feature\ Flags/FeatureFlag.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/App\ Delegate/User\ Activities/Universal\ Links/Components/UniversalLinkPath.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Behaviors/Default/ExplorationGenerator.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/Feature\ Flags/Experiment\ Flighting/ExperimentDescription.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Data/Models/Helpers/Filter/Filter.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Helpers/Labels\ &\ Text\ Views/LocalizedLabel.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Generators/Callouts/Location\ Callouts/InsideLocationCallout.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Data/Services/Cloud/CloudKeyValueStore+Routes.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/App\ Delegate/User\ Activities/UserActivityManager.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/Authorizations/AuthorizationStatus.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 Compiling\ AppDelegate.swift,\ KalmanFilter+CLLocation.swift,\ LaunchActivityCoordinator.swift,\ ActivityIndicatorTableViewCell.swift,\ DestinationCallout.swift,\ BLELogger.swift,\ OSMServiceModel.swift,\ Typeable.swift,\ FilterTableViewHeaderView.swift,\ NearbyFilterTableViewController.swift,\ TableViewDelegate.swift,\ SecondaryRoadsContext.swift,\ LastSelectedPredicate.swift,\ NotificationController.swift,\ POITableViewDelegate.swift,\ DestinationTutorialIntroViewController.swift,\ PostalAbbreviations.swift,\ AudioParser.swift,\ BeaconUpdateFilter.swift,\ TTSAudioBufferPublisher.swift,\ BeaconAction.swift,\ RoadAdjacentDataView.swift,\ NavigationBarStyle.swift,\ CalloutStateMachine.swift,\ HeadphoneMotionManager.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/App\ Delegate/AppDelegate.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Sensors/Filters/Kalman\ Filter/KalmanFilter+CLLocation.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/Launch\ Activities/LaunchActivityCoordinator.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Controls/UITableView/ActivityIndicatorTableViewCell.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Behaviors/Default/Callouts/DestinationCallout.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/Logging/BLELogger.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Data/Services/OSM/OSMServiceModel.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Data/Models/Helpers/Types/Typeable.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Controls/UITableView/FilterTableViewHeaderView.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/View\ Controllers/POI\ Table/NearbyFilterTableViewController.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Helpers/UITableView/UITableViewDelegate/TableViewDelegate.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Data/Spatial\ Data/SecondaryRoadsContext.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Data/Models/Helpers/Sort/Predicate\ Definitions/LastSelectedPredicate.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Notifications/NotificationController.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/View\ Controllers/POI\ Table/POITableViewDelegate.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/View\ Controllers/Tutorials/Destination/DestinationTutorialIntroViewController.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Language/PostalAbbreviations.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Audio/Protocols/AudioParser.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Behaviors/Helpers/BeaconUpdateFilter.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Audio/Text\ To\ Speech/TTSAudioBufferPublisher.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Helpers/Beacon/BeaconAction.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Data/Preview/RoadAdjacentDataView.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Modifiers/Navigation/NavigationBarStyle.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Behaviors/Helpers/CalloutStateMachine.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Sensors/Motion/Headphone\ Motion/HeadphoneMotionManager.swift (in target 'Soundscape' from project 'GuideDogs')
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/App\ Delegate/AppDelegate.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Sensors/Filters/Kalman\ Filter/KalmanFilter+CLLocation.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/Launch\ Activities/LaunchActivityCoordinator.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Controls/UITableView/ActivityIndicatorTableViewCell.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Behaviors/Default/Callouts/DestinationCallout.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/Logging/BLELogger.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Data/Services/OSM/OSMServiceModel.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Data/Models/Helpers/Types/Typeable.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Controls/UITableView/FilterTableViewHeaderView.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/View\ Controllers/POI\ Table/NearbyFilterTableViewController.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Helpers/UITableView/UITableViewDelegate/TableViewDelegate.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Data/Spatial\ Data/SecondaryRoadsContext.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Data/Models/Helpers/Sort/Predicate\ Definitions/LastSelectedPredicate.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Notifications/NotificationController.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/View\ Controllers/POI\ Table/POITableViewDelegate.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/View\ Controllers/Tutorials/Destination/DestinationTutorialIntroViewController.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Language/PostalAbbreviations.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Audio/Protocols/AudioParser.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Behaviors/Helpers/BeaconUpdateFilter.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Audio/Text\ To\ Speech/TTSAudioBufferPublisher.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Helpers/Beacon/BeaconAction.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Data/Preview/RoadAdjacentDataView.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Modifiers/Navigation/NavigationBarStyle.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Behaviors/Helpers/CalloutStateMachine.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Sensors/Motion/Headphone\ Motion/HeadphoneMotionManager.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 Compiling\ UIBarButtonItem+Extensions.swift,\ DynamicLaunchViewController.swift,\ ServiceModel.swift,\ MapViewController.swift,\ ConcatenatedSound.swift,\ AdjacentDataView.swift,\ Integrations.swift,\ AnimatedBarButtonItem.swift,\ MarkerTutorialViewController.swift,\ FirstUseExperience.swift,\ BehaviorDelegate.swift,\ BeaconTitleContentViewDelegate.swift,\ PreviewTutorialViewController.swift,\ TourDetail.swift,\ LocationAddressTextFormat.swift,\ NotificationServerDelegate.swift,\ DynamicMenuItemView.swift,\ GlyphSound.swift,\ Array+CircularQuantity.swift,\ RoundedSolidButton.swift,\ Road.swift,\ SpatialDataContext.swift,\ RouteGuidance.swift,\ RoundedContrastText.swift,\ NotificationServer.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/Framework\ Extensions/UI\ Class\ Extensions/UIBarButtonItem+Extensions.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/View\ Controllers/Launch/DynamicLaunchViewController.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Data/Services/Helpers/ServiceModel.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/View\ Controllers/Map/MapViewController.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Audio/Sounds/ConcatenatedSound.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Data/Preview/Protocols/AdjacentDataView.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Helpers/Integrations.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Controls/AnimatedBarButtonItem.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/View\ Controllers/Tutorials/Markers/MarkerTutorialViewController.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/Settings/FirstUseExperience.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Behaviors/Protocols/BehaviorDelegate.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Controls/Beacon/BeaconTitleContentViewDelegate.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/View\ Controllers/Preview/PreviewTutorialViewController.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Behaviors/Guided\ Tour/TourDetail.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Modifiers/Text/Locations/LocationAddressTextFormat.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Notifications/Notification\ Server/NotificationServerDelegate.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Controls/Main\ Menu/DynamicMenuItemView.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Audio/Sounds/GlyphSound.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/Framework\ Extensions/Base\ Type\ Extensions/Array+CircularQuantity.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Controls/RoundedSolidButton.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Data/Models/Protocols/Road.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Data/Spatial\ Data/SpatialDataContext.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Behaviors/Route\ Guidance/RouteGuidance.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Modifiers/Text/RoundedContrastText.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Notifications/Notification\ Server/NotificationServer.swift (in target 'Soundscape' from project 'GuideDogs')
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/Framework\ Extensions/UI\ Class\ Extensions/UIBarButtonItem+Extensions.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/View\ Controllers/Launch/DynamicLaunchViewController.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Data/Services/Helpers/ServiceModel.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/View\ Controllers/Map/MapViewController.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Audio/Sounds/ConcatenatedSound.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Data/Preview/Protocols/AdjacentDataView.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Helpers/Integrations.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Controls/AnimatedBarButtonItem.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/View\ Controllers/Tutorials/Markers/MarkerTutorialViewController.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/Settings/FirstUseExperience.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Behaviors/Protocols/BehaviorDelegate.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Controls/Beacon/BeaconTitleContentViewDelegate.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/View\ Controllers/Preview/PreviewTutorialViewController.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Behaviors/Guided\ Tour/TourDetail.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Modifiers/Text/Locations/LocationAddressTextFormat.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Notifications/Notification\ Server/NotificationServerDelegate.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Controls/Main\ Menu/DynamicMenuItemView.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Audio/Sounds/GlyphSound.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/Framework\ Extensions/Base\ Type\ Extensions/Array+CircularQuantity.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Controls/RoundedSolidButton.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Data/Models/Protocols/Road.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Data/Spatial\ Data/SpatialDataContext.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Behaviors/Route\ Guidance/RouteGuidance.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Modifiers/Text/RoundedContrastText.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Notifications/Notification\ Server/NotificationServer.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftDriverJobDiscovery normal arm64 Compiling BeaconOrientation.swift, NetworkClient.swift, TypePredicate.swift, HeadingKnob.swift, AnyViewControllerRepresentable.swift, LocationProviderDelegate.swift, OfflineHelpPageViewController.swift, GenericTableViewDelegate.swift, ModalNavigationView.swift, SearchResult.swift, HeadphoneMotionManagerWrapper.swift, CalloutRangeContext.swift, DismissableBannerViewController.swift, RouteStore.swift, BeaconCalloutGenerator.swift, EventProcessor.swift, BeaconOption.swift, LocationNameTextFormat.swift, FilterPredicate.swift, AlertContainer.swift, SmallBannerContainerView.swift, CloudKeyValueStore.swift, NotificationContainer.swift, BaseBLEDevice.swift, FilterBandParameters.swift (in target 'Soundscape' from project 'GuideDogs')
+
+SwiftCompile normal arm64 Compiling\ MenuAnimator.swift,\ View+Modifiers.swift,\ POI.swift,\ MKCoordinateRegion+Extensions.swift,\ PreparableAudioLayer.swift,\ ButtonTableViewCell.swift,\ Gradient+Color.swift,\ PersistentNotificationObserver.swift,\ SystemGenerator.swift,\ GeneratorUpdateFilter.swift,\ Wand.swift,\ AudioSessionManager.swift,\ LocationActionError.swift,\ CallManager.swift,\ SoundType.swift,\ HandledEventAction.swift,\ ExperimentConfiguration.swift,\ LanguageTableViewController.swift,\ DeviceReachabilityAlertObserver.swift,\ RealmMigrationTools.swift,\ GeolocationManager.swift,\ HeadphoneCalibrationManager.swift,\ Queue.swift,\ Array+Extensions.swift,\ NearbyData.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Controls/Main\ Menu/MenuAnimator.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/Framework\ Extensions/SwiftUI/View+Modifiers.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Data/Models/Protocols/POI.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/Framework\ Extensions/Geo\ Extensions/MKCoordinateRegion+Extensions.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Audio/PreparableAudioLayer.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Controls/Troubleshooting/ButtonTableViewCell.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/Framework\ Extensions/SwiftUI/Gradient+Color.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Notifications/Observers/PersistentNotificationObserver.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Behaviors/Default/SystemGenerator.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Behaviors/Helpers/GeneratorUpdateFilter.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Behaviors/Preview/Wand.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Audio/AudioSessionManager.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Helpers/Location/Location\ Action/LocationActionError.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Audio/CallManager.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Audio/Protocols/SoundType.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Behaviors/Helpers/HandledEventAction.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/Feature\ Flags/Experiment\ Flighting/ExperimentConfiguration.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/View\ Controllers/Settings/LanguageTableViewController.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Notifications/Observers/Alert/DeviceReachabilityAlertObserver.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Data/Models/Helpers/RealmMigrationTools.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Sensors/Geolocation/Geolocation\ Manager/GeolocationManager.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Sensors/Motion/Headphone\ Motion/HeadphoneCalibrationManager.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/Data\ Structures/Queue.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/Framework\ Extensions/Base\ Type\ Extensions/Array+Extensions.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Helpers/Nearby\ Table/NearbyData.swift (in target 'Soundscape' from project 'GuideDogs')
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Controls/Main\ Menu/MenuAnimator.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/Framework\ Extensions/SwiftUI/View+Modifiers.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Data/Models/Protocols/POI.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/Framework\ Extensions/Geo\ Extensions/MKCoordinateRegion+Extensions.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Audio/PreparableAudioLayer.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Controls/Troubleshooting/ButtonTableViewCell.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/Framework\ Extensions/SwiftUI/Gradient+Color.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Notifications/Observers/PersistentNotificationObserver.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Behaviors/Default/SystemGenerator.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Behaviors/Helpers/GeneratorUpdateFilter.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Behaviors/Preview/Wand.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Audio/AudioSessionManager.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Helpers/Location/Location\ Action/LocationActionError.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Audio/CallManager.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Audio/Protocols/SoundType.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Behaviors/Helpers/HandledEventAction.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/Feature\ Flags/Experiment\ Flighting/ExperimentConfiguration.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/View\ Controllers/Settings/LanguageTableViewController.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Notifications/Observers/Alert/DeviceReachabilityAlertObserver.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Data/Models/Helpers/RealmMigrationTools.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Sensors/Geolocation/Geolocation\ Manager/GeolocationManager.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Sensors/Motion/Headphone\ Motion/HeadphoneCalibrationManager.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/Data\ Structures/Queue.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/Framework\ Extensions/Base\ Type\ Extensions/Array+Extensions.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftCompile normal arm64 /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Helpers/Nearby\ Table/NearbyData.swift (in target 'Soundscape' from project 'GuideDogs')
+    cd /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios
+    
+
+SwiftDriverJobDiscovery normal arm64 Compiling CodeableDirection.swift, HeadphoneMotionManagerStatus.swift, ViewControllerRepresentable.swift, GPXTracker.swift, RouteParameters.swift, NewFeaturesViewController.swift, EntityParameters.swift, ThreadSafeValue.swift, BaseTutorialViewController.swift, RouteDetail.swift, DeviceManager.swift, OnboardingGenerator.swift, UniversalLinkParameters.swift, BeaconDetailLocalizedLabel.swift, DebugSettingsContext.swift, MapViewControllerRepresentable.swift, ConditionalAccessibilityAction.swift, Result+Extensions.swift, RequestToken.swift, LayeredSound.swift, BeaconDetail.swift, GeocodedAddress.swift, UITextField+Extensions.swift, View+Extensions.swift (in target 'Soundscape' from project 'GuideDogs')
+
+SwiftCompile normal arm64 Compiling\ WaypointDetailAnnotationView.swift,\ DynamicView.swift,\ AVAudioPlayer+Extensions.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Helpers/Location/Location\ Detail/Map/WaypointDetailAnnotationView.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/Visual\ UI/Controls/DynamicView.swift /Users/ajiteshbankula/Documents/soundscapeIOSWorkVibroGuide/apps/ios/GuideDogs/Code/App/Framework\ Extensions/AVAudio\ Extensions/AVAudioPlayer+Extensions.swift (in target 'Soundscape' from project 'GuideDogs')
+
+** BUILD FAILED **
+
+
+The following build commands failed:
+	SwiftEmitModule normal arm64 Emitting\ module\ for\ Soundscape (in target 'Soundscape' from project 'GuideDogs')
+	EmitSwiftModule normal arm64 (in target 'Soundscape' from project 'GuideDogs')
+	Building project GuideDogs with scheme Soundscape
+(3 failures)
